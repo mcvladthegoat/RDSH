@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/news"
+        android:icon="@drawable/news"
+        android:title="Новости" />
+    <item
+        android:id="@+id/notifications"
+        android:icon="@drawable/notification"
+        android:title="Оповещения" />
+    <item
+        android:id="@+id/myEvent"
+        android:icon="@drawable/myevent"
+        android:title="Мои мероприятия" />
+    <item
+        android:id="@+id/direction"
+        android:icon="@drawable/direction"
+        android:title="Направления" />
+
+    <item
+        android:id="@+id/person"
+        android:icon="@drawable/person"
+        android:title="Личный кабинет" />
+
+    <item
+        android:id="@+id/exit"
+        android:icon="@drawable/person"
+        android:title="Выход" />
+
+</menu>

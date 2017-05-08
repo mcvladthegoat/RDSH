@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_autho"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp"
+    tools:context="com.example.rdshv40.Activity.Autho">
+
+    <TableLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tableTool">
+        <TableRow>
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="35dp"
+                android:id="@+id/authorization"
+                android:text="Авторизация"
+                android:textColor="@color/rdshWhite"
+                android:background="@color/rdshBlue"/>
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="35dp"
+                android:id="@+id/registration"
+                android:text="Регистрация"
+                android:textColor="@color/rdshGray"
+                android:background="@color/rdshWhite"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="10dp">
+            <ImageView
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:src="@drawable/logordsh"/>
+
+            <ImageView
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:src="@drawable/logoromanov"/>
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/tableData"
+        android:layout_below="@+id/tableTool"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true">
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="43dp"
+            android:id="@+id/email"
+            android:hint="E-mail"
+            android:textColorHint="@color/rdshGray"
+            android:textColorHighlight="@color/rdshDarkBlue"
+            android:textSize="20dp"
+            android:scrollHorizontally="true"/>
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="43dp"
+            android:id="@+id/password"
+            android:hint="Пароль"
+            android:textColorHint="@color/rdshGray"
+            android:textColorHighlight="@color/rdshDarkBlue"
+            android:textSize="20dp"
+            android:inputType="textPassword"
+            android:scrollHorizontally="true"/>
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="43dp"
+            android:id="@+id/enter"
+            android:background="@color/rdshRed"
+            android:text="Войти"
+            android:textColor="@color/rdshWhite"/>
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

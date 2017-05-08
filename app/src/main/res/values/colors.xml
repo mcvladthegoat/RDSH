@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="rdshDarkdarkBlue">#294496</color>
+    <color name="rdshBlue">#007ed2</color>
+    <color name="rdshRed">#c2220b</color>
+
+    <color name="rdshWhite">#e8e8e8</color>
+    <color name="rdshLightBlue">#73b2eb</color>
+    <color name="rdshLightRed">#c63205</color>
+
+    <color name="rdshGray">#878787</color>
+    <color name="rdshDarkBlue">#005b99</color>
+    <color name="rdshDarkRed">#7a1607</color>
+</resources>

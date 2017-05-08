@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Rdshv4.0</string>
+    <string-array name="roleList">
+        <item>Ученик</item>
+        <item>Родитель</item>
+        <item>Учитель</item>
+    </string-array>
+    <string name="title_activity_news">Новости</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_event_no_participant">Мероприятие (не участник)</string>
+    <string name="title_activity_add_event">Добавление мероприятия</string>
+    <string name="title_activity_event_participant">Мероприятие (участник)</string>
+    <string name="title_activity_direction_list">Направления</string>
+    <string name="title_activity_direction">Direction</string>
+    <string name="title_activity_task">Task</string>
+    <string name="title_activity_my_events">Мои мероприятия</string>
+</resources>

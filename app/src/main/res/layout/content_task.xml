@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_task"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="1dp"
+    android:paddingRight="1dp"
+    android:paddingTop="1dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.rdshv40.Activity.Task"
+    tools:showIn="@layout/app_bar_task">
+
+    <ScrollView
+        android:layout_width="300dp"
+        android:layout_height="450dp"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/nameTask"
+                android:layout_gravity="center"
+                android:textSize="20dp"
+                android:text="Название задания"
+                android:textColor="@color/rdshDarkdarkBlue"
+                android:textAlignment="center"/>
+
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text ="Срок:"
+                    android:textSize="30dp"
+                    android:textColor="@color/rdshDarkRed"/>
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text ="09.08.79"
+                    android:textSize="30dp"
+                    android:layout_gravity="end"
+                    android:textColor="@color/rdshDarkRed"
+                    android:id="@+id/dateTask"/>
+            </TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Участники"
+                android:textSize="20dp"
+                android:textColor="#222222"/>
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/listParticipantTask"/>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="#fffef3">
+
+
+            </ScrollView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:layout_width="250dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/newMessage"
+                    android:hint="Новое сообщение"/>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/send"
+                    android:id="@+id/sendMessage"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

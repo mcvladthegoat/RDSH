@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="15dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TableRow>
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"/>
+
+        <TableLayout>
+            <TableRow>
+                <TextView
+                    android:layout_width="225dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="Название"
+                    android:textColor="@color/rdshDarkBlue"
+                    android:textAlignment="center"
+                    android:id="@+id/eventName"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_width="112dp"
+                    android:layout_height="wrap_content"
+                    android:text="дата"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"
+                    android:textSize="25dp"
+                    android:textColor="@color/rdshDarkRed"
+                    android:id="@+id/eventDate"/>
+
+            </TableRow>
+        </TableLayout>
+    </TableRow>
+</TableLayout>

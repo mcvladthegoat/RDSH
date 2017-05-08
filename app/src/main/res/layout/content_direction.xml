@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_direction"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="1dp"
+    android:paddingLeft="1dp"
+    android:paddingRight="1dp"
+    android:paddingTop="1dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.rdshv40.Activity.Direction"
+    tools:showIn="@layout/app_bar_direction">
+
+    <ScrollView
+        android:layout_width="300dp"
+        android:layout_height="450dp"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/linearDirect">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/directionName"
+                    android:textSize="20dp"
+                    android:text="Название"
+                    android:textColor="@color/rdshDarkBlue"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"/>
+            </TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/directionRating"
+                android:textSize="20dp"
+                android:text="Рейтинг:"
+                android:textColor="@color/rdshDarkRed"
+
+                android:layout_marginTop="10dp"/>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/directionDescription"
+                    android:text="Описание"
+                    android:textSize="20dp"
+                    android:textColor="@color/rdshGray"/>
+            </ScrollView>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/showActiveEvent"
+                    android:textSize="20dp"
+                    android:text="Показать текущие мероприятия"
+                    android:textColor="@color/rdshDarkBlue"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/showClosedEvent"
+                    android:textSize="20dp"
+                    android:text="Показать прошедшие мероприятия"
+                    android:textColor="@color/rdshDarkBlue"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"/>
+            </TableRow>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
